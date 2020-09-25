@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Welcome to RELATIVE URL TEMPLATES</h1>
+    <!-- LHS of the colon below comes from the app_name in urls.py
+  inside the basic_app folder. The RHS comes from the name you're
+  looking for in the urlpatterns in the same file-->
+    <a href="{% url 'basic_app:other' %}">Link to other</a>
+    <!-- make sure there's no spaces between basic_app:other and
+  the quotation marks -->
+    <a href="{% url 'admin:index' %}">Link to admin</a>
+    <a href="{% url 'index' %}">Link to index</a>
+  </body>
+</html>
